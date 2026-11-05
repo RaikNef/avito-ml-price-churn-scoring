@@ -1,0 +1,46 @@
+{
+  "dataset": "Avito Context Ad Clicks (rel-avito)",
+  "user_churn_scoring": {
+    "n_users_total": 49352,
+    "n_train": 37014,
+    "n_test": 12338,
+    "churn_rate_pct": 19.95,
+    "logreg_cv_roc_auc": 0.7313,
+    "gb_cv_roc_auc": 0.7297,
+    "logreg_test_roc_auc": 0.7317,
+    "gb_test_roc_auc": 0.7351,
+    "gb_test_pr_auc": 0.37,
+    "gb_test_f1_optimal": 0.4523,
+    "batch_inference_time_ms": 33.79,
+    "default_threshold_p0_050": {
+      "threshold": 0.5,
+      "targeted_share_pct": 0.4,
+      "recall_pct": 0.9,
+      "precision_pct": 44.2,
+      "f1": 0.0183,
+      "net_profit_rub": 332.56
+    },
+    "optimal_threshold_p_star": {
+      "threshold": 0.23,
+      "targeted_share_pct": 40.9,
+      "recall_pct": 69.0,
+      "precision_pct": 33.7,
+      "f1": 0.4523,
+      "net_profit_rub": 15786.33
+    }
+  },
+  "market_price_regression": {
+    "n_listings_total": 60000,
+    "mean_price_rub": 25399.78,
+    "median_price_rub": 11000.0,
+    "baseline_mape_pct": 124.2,
+    "baseline_rmse_rub": 18585.11,
+    "ridge_mape_pct": 32.77,
+    "ridge_rmse_rub": 10133.0,
+    "gb_mape_pct": 31.24,
+    "gb_rmse_rub": 9356.43,
+    "gb_r2": 0.872,
+    "relative_mape_reduction_pct": 74.9,
+    "relative_rmse_reduction_pct": 49.7
+  }
+}
